@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IBM Cloud Web Starter</title>
+    <style>
+        #flex-header,
+        body,
+        main ul {
+            -webkit-box-direction: normal
+        }
+
+        body {
+            background-color: #fff;
+            font-family: IBMPlexSans;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding: 0 20px
+        }
+
+        h1,
+        h2 {
+            color: #464646;
+            text-align: center
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2em
+        }
+
+        #flex-header,
+        main ul {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        #flex-header {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -ms-flex-flow: column;
+            flex-flow: column;
+        }
+
+        main ul,
+        main ul li {
+            -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+            align-items: baseline
+        }
+
+        @media screen and (min-width:900px) {
+            main {
+                width: 700px;
+                margin: auto
+            }
+        }
+
+        .cloud-description {
+            border: 3px solid #006699;
+            padding: 2rem
+        }
+
+        .right-arrow {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAACn3pUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjanVRbkiUpCP13Fb0EQURdji8iZgez/DmY3uq6FdUVHYORKQnI44AZ9r//WPjlVEmD5FK1qUaQNGncwdT4kPMDD+NZj6hqfBHFdt6HApUP8ZviOPBP/iK/O/UvjuRGp/GueMm5fnHEz5Y8AHiS66hdhhLE30TWVkuU39/9BrBbopYsWksOupQ5psT7PPJESzFRKqnjTXi73iUCPh85J3d4nCE64AnxZpT8OCcg1cgVL/kpIF3kP8lPKFcALPcVvpYS+VF8gPpqRnqXv5rxonDSS1CnT0b6fWd+akz4qTOnrE9Ai1yO3+U7Rwqf0zNb1WwfC+miGFC9E/Yqnq4dChOvIaMS8RXA5IfF7ksB6cRsl7sMaAzkO4miEWP57pRIaVLBLtQD5SOs0FfqtLDsrESFmYWZNgsObMj2Ry50w5YTeMcaEHvDSOBMaP//Ff7W0Gw6RHQu9DhjgbzY2+LFAuzkG8zQBaq3Jyn+ROXgWZ8zXA7+5JNNB/lnbt/pmWocI7dWhGbK7PNfhIQz0K4OKlyGkyTdofwzXZc383UcP5nf/MO3R+IpGB3rNE7E5b+4eYM5Jq6PySCcI4/BGobmVWZpstXmGkRZLSlp17xLm3HobNZzBt5T++QxVLJIbntKK6lsnbNJ1dCm9CVzTBtjYSBiSYtxwEfH8tRWRktWltQ+G9tMg+rC/wYmeSMJGXX12iXgnmHMmw9xTTaWdhm9U+tti62G1NbcppapDqNeVBbp2tWibu5aRpyGq8ABqdbcW1kc62wZidfYee1SDVgZp2UTKRicLZ68FZANGtLqnqOpcW2FVqGQGxdDLjHhhiRpsw3iievFjMFXXFu/83W3Bsj9B/YfjhF4Fd3teakAAAAEc0JJVAgICAh8CGSIAAABr0lEQVQoka2ST0gUYRjGn/f7vpndcdZRgzVDooNKkUGHILxFZ6FTozdPERS4YB7UQ4yL7cWO2V8PUkGH6ezJQ4ReIzrUxayIQLHF1c2anZlv5u1gikHUoD3Hl5ff8zzwAP9BnseCmenQoF3I2MOVltLj7fHRp1v9+032/9Lu8V3vczrtuvwv+OojyFob0uLm51P5QvtriLzBYX3asZyp8gBtX/BYvSyT3oMfVDf96Ny3iGdImH1p/GPRsTAyNWC/+i156f56j6HCzoSjxIDKBNZMQstG3aamzkDYt1jZZ5FENSn1hPP+y9zkZG+srt1dPi5bmxdkrniCA0YqspUhADkJhAkQf9+IdVCNSZhtVsF5EJw8tkREb1W1kat2S30niYIzIk0iQjY6Mwg6pZyiOgQupSrfZZgmJIfTVnhkxfM4Y8y/aOzZ5nBDGxUiSbbJNyqD1uwve1IA4Poss8LWi6D2r+DzjTf5NdFzjwpNQ2Ir+mRw7WplsGPB9Vn6LlIiOsDwmQlEXJpdO2oUnPlEo95iRVfKl1s/eC9YlS/uzPDQuj7zseP2k1UbAPw/tP8JGbirMg8+zmoAAAAASUVORK5CYII=") no-repeat;
+            width: 25px;
+            height: 10px;
+            padding-right: 5px
+        }
+
+        main ul li {
+            -ms-flex-preferred-size: 90%;
+            flex-basis: 90%;
+            padding: 5px;
+            flex-grow: 1;
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1
+        }
+
+        @media screen and (min-width:600px) {
+            main ul li {
+                -ms-flex-preferred-size: 45%;
+                flex-basis: 45%
+            }
+        }
+
+        main ul li a {
+            text-decoration: underline;
+            font-size: 1em
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header id="flex-header">
+        <div class="cloud-header"></div>
+        <h1>Flask</h1>
+        <h2>Python app exposing REST APIs.</h2>
+    </header>
+    <main>
+        <div class="cloud-description">
+            <b>This Flask microservice has these endpoints:</b>
+            <ul>
+                <li>
+                    <b>/health</b> - returns a simple {"status":"UP"} json response if the app is running
+                </li>
+                <li>
+                    <b>/swagger/api-docs</b> - standard Swagger UI to exercise all the endpoints
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

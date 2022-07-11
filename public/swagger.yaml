@@ -1,0 +1,25 @@
+swagger: "2.0"
+
+info:
+  version: "0.0.1"
+  title: Flask REST APIs
+
+produces:
+  - image/png
+  - application/json
+
+paths:
+  /health:
+    get:
+      operationId: get
+      description: Get health status of
+      responses:
+        200:
+          description: "Health check response"
+          schema:
+            type: "object"
+            properties:
+              status:
+                type: "string"
+          examples:
+            application/json: { "status": "UP"}
